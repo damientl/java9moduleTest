@@ -2,7 +2,7 @@ Java 9 example
 using junit
 using Java Platform Module System(Jigsaw)
 
-compile
+compile:
 javac --module-path lib -d "target" $(find src -name "*.java")
 
 run:
