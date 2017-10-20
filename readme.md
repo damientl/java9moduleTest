@@ -6,4 +6,4 @@ Java Platform Module System(Jigsaw)
 
 Maven 
 
-easy import on IDE and run tests
+project compatible with intellij idea latest release
