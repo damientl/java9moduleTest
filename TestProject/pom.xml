@@ -7,81 +7,10 @@
     <groupId>org.accenture.online</groupId>
     <artifactId>Test</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
 
-    <properties>
-
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <!-- Java version-->
-        <java.version>9</java.version>
-
-
-        <junit.jupiter.version>5.0.0</junit.jupiter.version>
-        <junit.platform.version>1.0.1</junit.platform.version>
-
-    </properties>
-
-<!--
     <modules>
-        <module>org.accenture.online</module>
-    </modules>-->
-    
-    <build>
-        <sourceDirectory>src/org.accenture.online/main/java</sourceDirectory>
-        <testSourceDirectory>src/org.accenture.online/test/java</testSourceDirectory>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.7.0</version>
-                <configuration>
-                    <source>${java.version}</source>
-                    <target>${java.version}</target>
-                    <showWarnings>true</showWarnings>
-                    <showDeprecation>true</showDeprecation>
-                </configuration>
-            </plugin><plugin>
-            <artifactId>maven-surefire-plugin</artifactId>
-            <version>2.19</version>
-            <dependencies>
-                <dependency>
-                    <groupId>org.junit.platform</groupId>
-                    <artifactId>junit-platform-surefire-provider</artifactId>
-                    <version>${junit.platform.version}</version>
-                </dependency>
-            </dependencies>
-        </plugin>
-        </plugins>
-    </build>
-
-    <dependencies>
-
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-engine</artifactId>
-            <version>${junit.jupiter.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.junit.platform/junit-platform-surefire-provider -->
-        <dependency>
-            <groupId>org.junit.platform</groupId>
-            <artifactId>junit-platform-surefire-provider</artifactId>
-            <version>1.0.1</version>
-            <scope>test</scope>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.hamcrest/hamcrest-core -->
-        <dependency>
-            <groupId>org.hamcrest</groupId>
-            <artifactId>hamcrest-core</artifactId>
-            <version>1.3</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>RELEASE</version>
-        </dependency>
-
-
-    </dependencies>
+        <module>exercise</module>
+    </modules>
 
 </project>
