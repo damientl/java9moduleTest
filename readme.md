@@ -1,17 +1,9 @@
-Java 9 example
-using junit
-using Java Platform Module System(Jigsaw)
+Java 9 Project
 
-compile:
+junit 5
 
-javac --module-path lib -d "target" $(find src -name "*.java")
+Java Platform Module System(Jigsaw)
 
-run:
+Maven 
 
-java --module-path=lib:target --add-modules org.accenture.online --module junit/org.junit.runner.JUnitCore org.accenture.online.ExerciseTest
-
-
-etc:
-
-cp ~/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar lib
-
+easy import on IDE and run tests
