@@ -11,6 +11,7 @@
 
     <modules>
         <module>exercise</module>
+        <module>rules</module>
     </modules>
 
 </project>

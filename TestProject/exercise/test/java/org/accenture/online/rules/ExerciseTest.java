@@ -1,4 +1,4 @@
-package org.accenture.online.exercise;
+package org.accenture.online.rules;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInfo;

@@ -2,18 +2,15 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-
-    <groupId>org.accenture.online</groupId>
-    <artifactId>exercise</artifactId>
-    <version>1.0-SNAPSHOT</version>
-
-    <!-- parent coordinates -->
     <parent>
-        <groupId>org.accenture.online</groupId>
         <artifactId>Test</artifactId>
+        <groupId>org.accenture.online</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>rules</artifactId>
+
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -23,8 +20,6 @@
         <junit.platform.version>1.0.1</junit.platform.version>
         <junit.version>4.12</junit.version>
     </properties>
-
-
     <!-- project dependencies -->
     <dependencies>
         <dependency>
@@ -39,16 +34,9 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>org.accenture.online</groupId>
-            <artifactId>rules</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
     </dependencies>
 
     <build>
-        <sourceDirectory>main/java</sourceDirectory>
-        <testSourceDirectory>test/java</testSourceDirectory>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -71,8 +59,14 @@
                 </dependency>
             </dependencies>
         </plugin>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-jar-plugin</artifactId>
+            <version>2.3.1</version>
+            <configuration>
+                <outputDirectory>../libs</outputDirectory>
+            </configuration>
+        </plugin>
         </plugins>
     </build>
-
-
 </project>
