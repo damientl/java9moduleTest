@@ -1,4 +1,6 @@
-package org.accenture.online.rules;
+package org.online;
+
+import org.online.rules.Rules;
 
 public class Exercise {
     public String hello() {

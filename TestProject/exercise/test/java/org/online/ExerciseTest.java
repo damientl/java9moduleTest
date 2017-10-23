@@ -1,4 +1,4 @@
-package org.accenture.online.rules;
+package org.online;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInfo;
@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class ExerciseTest{
     @Test
     public void test(TestInfo info){
-        assertEquals(new Exercise().hello(), "hi");
+        assertEquals(new Exercise().hello(), "hi Rules");
     }
     @Test
     public void test2(TestInfo info){
